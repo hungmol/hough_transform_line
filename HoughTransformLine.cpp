@@ -62,7 +62,7 @@ bool HoughTransformLine::removeWeakLine() {
 		itr->second > currentMax ? currentMax = itr->second : currentMax = currentMax;
 	}
 
-	int threshold = 0.3 * currentMax;
+	int threshold = RATIO * currentMax;
 	
 	for (itr = this->accumulator.begin(); itr != this->accumulator.end(); ++itr) {
 		if (itr->second >= threshold) {

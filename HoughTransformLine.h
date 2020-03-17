@@ -6,6 +6,8 @@
 
 //TO-DO: implement probabilisitc Hough Line transform for finite lines
 
+#define RATIO 0.5
+
 class HoughTransformLine
 {
 public:
